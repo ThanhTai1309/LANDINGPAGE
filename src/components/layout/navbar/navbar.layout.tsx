@@ -1,5 +1,6 @@
 import { listMenu } from "@/constants/menu/listMenu.menu";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,13 +48,13 @@ const Navbar: React.FC = () => {
 
           <div className="hidden md:flex space-x-6 text-lg">
             {listMenu.map((menu, index) => (
-              <a
+              <Link
                 key={index}
-                href={menu.href}
+                to={menu.href}
                 className="hover:underline decoration-red-500 underline-offset-4"
               >
                 {menu.title}
-              </a>
+              </Link>
             ))}
           </div>
 

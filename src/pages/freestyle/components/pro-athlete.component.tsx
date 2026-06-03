@@ -1,5 +1,6 @@
 import listFreestyleMenu from "@/constants/menu/listFreeMenu"
 import MotionInView from "@/components/ui/motion-in-view"
+import { assetPath } from "@/lib/asset"
 
 const ProAthleteComponent = () => {
   return (
@@ -12,7 +13,7 @@ const ProAthleteComponent = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center text-center gap-4">
         <div className="w-full h-full lg:w-3/4 flex flex-col items-center justify-center overflow-hidden">
           <MotionInView as="img"
-            src="/images/FreeStyle1.jpg"
+            src={assetPath("/images/FreeStyle1.jpg")}
             className="w-[85%] h-[85%] object-cover bg-black"
             alt="Freestyle Image"
           />

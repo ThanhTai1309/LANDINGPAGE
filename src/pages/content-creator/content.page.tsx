@@ -3,6 +3,7 @@
 import listSocialMenu from "@/constants/menu/listSocial.menu";
 import SlideComponent from "./components/slide.component";
 import MotionInView from "@/components/ui/motion-in-view";
+import { assetPath } from "@/lib/asset";
 
 const Content = () => {
   return (
@@ -35,7 +36,7 @@ const Content = () => {
         </MotionInView>
         <MotionInView direction="right" className="justify-center items-center flex w-1/2 md:justify-center md:items-end">
           <MotionInView as="img" direction="none"
-            src="/images/width_800.webp"
+            src={assetPath("/images/width_800.webp")}
             alt=""
             className="w-full md:w-[92%] h-[70vh] md:h-[90vh] object-cover"
           />

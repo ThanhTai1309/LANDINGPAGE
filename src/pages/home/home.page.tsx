@@ -1,5 +1,6 @@
 import { MAIL_TO } from "@/constants/directions/contact-direct.direction";
 import listSocialMenu from "@/constants/menu/listSocial.menu";
+import { assetPath } from "@/lib/asset";
 import { motion } from "framer-motion";
 
 const HomePage = () => {
@@ -54,7 +55,7 @@ const HomePage = () => {
                 transition={{ duration: 0.6, ease: "easeOut" }}
             >
                 <motion.img
-                    src="/images/header.png"
+                    src={assetPath("/images/header.png")}
                     alt="TUNGAGE Portfolio"
                     className="w-full h-full object-cover bg-black"
                     initial={{ scale: 1.05, opacity: 0 }}

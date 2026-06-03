@@ -2,6 +2,7 @@ import { videoDirection } from "@/constants/directions/video.direction"
 import MotionInView from "@/components/ui/motion-in-view"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { assetPath } from "@/lib/asset"
 
 const cancelTalkVideoUrl = "https://www.youtube.com/watch?v=bzDgZuRPxZA";
 
@@ -58,7 +59,7 @@ const DirectorMV = () => {
           </div>
         </MotionInView>
         <MotionInView direction="right" className="justify-center items-start flex md:w-1/2 md:justify-center md:items-end ">
-          <MotionInView as="img" direction="none" src="/images/Dic1.jpg" alt="" className="w-full md:w-[92%] h-[70vh] md:h-[90vh] object-cover items-center rounded-none shadow-none" />
+          <MotionInView as="img" direction="none" src={assetPath("/images/Dic1.jpg")} alt="" className="w-full md:w-[92%] h-[70vh] md:h-[90vh] object-cover items-center rounded-none shadow-none" />
         </MotionInView>
       </section>
 
@@ -77,17 +78,17 @@ const DirectorMV = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full relative">
                 <MotionInView direction="up">
                   <p className="text-red-500 font-extrabold uppercase tracking-wide text-xs md:text-sm mb-3">TOP #1 YOUTUBE VIDEO TRENDING</p>
-                  <MotionInView as="img" direction="none" src="/images/Dec6.jpg" alt="" className="w-full h-auto rounded-md shadow-lg" />
+                  <MotionInView as="img" direction="none" src={assetPath("/images/Dec6.jpg")} alt="" className="w-full h-auto rounded-md shadow-lg" />
                 </MotionInView>
                 <MotionInView direction="up" delay={0.05}>
                   <p className="text-red-500 font-extrabold uppercase tracking-wide text-xs md:text-sm mb-3">TOP #1 YOUTUBE VIDEO TRENDING</p>
-                  <MotionInView as="img" direction="none" src="/images/Dec5.jpg" alt="" className="w-full h-auto rounded-md shadow-lg" />
+                  <MotionInView as="img" direction="none" src={assetPath("/images/Dec5.jpg")} alt="" className="w-full h-auto rounded-md shadow-lg" />
                 </MotionInView>
               </div>
             </div>
           </MotionInView>
           <MotionInView direction="right" className="md:w-1/2 relative flex items-center justify-center px-6 md:px-0">
-            <MotionInView as="img" direction="none" src="/images/Dec4.jpg" alt="" className="w-full md:w-[92%] h-[60vh] md:h-[80vh] object-cover" />
+            <MotionInView as="img" direction="none" src={assetPath("/images/Dec4.jpg")} alt="" className="w-full md:w-[92%] h-[60vh] md:h-[80vh] object-cover" />
           </MotionInView>
         </div>
       </section>
@@ -126,7 +127,7 @@ const DirectorMV = () => {
               className="group relative block w-full md:w-[92%] overflow-hidden"
             >
               <img
-                src="/images/CancelTalk.jpg"
+                src={assetPath("/images/CancelTalk.jpg")}
                 alt="Cancel Talk official music video"
                 className="w-full h-[60vh] md:h-[80vh] object-cover"
               />

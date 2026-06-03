@@ -1,5 +1,6 @@
 import ContactForm from "./components/contact-form.component";
 import MotionInView from "@/components/ui/motion-in-view";
+import { assetPath } from "@/lib/asset";
 
 
 const Contact = () => {
@@ -15,7 +16,7 @@ const Contact = () => {
 
       <MotionInView direction="right" className="w-full md:w-1/2 h-full flex items-center justify-center mt-6 md:mt-0 overflow-hidden">
         <MotionInView as="img"
-          src="/images/Contact.jpg"
+          src={assetPath("/images/Contact.jpg")}
           alt="TUNGAGE Portfolio"
           className="w-full h-full object-cover bg-black"
         />

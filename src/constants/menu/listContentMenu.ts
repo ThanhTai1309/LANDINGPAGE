@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset";
+
 interface IContentMenu {
   img: string;
   title: string;
@@ -7,72 +9,72 @@ const SIZE = "h-32 w-32 flex justify-center items-center mt-6";
 const listContentMenu: IContentMenu[] =
   [
     {
-      img: '/images/apple.png',
+      img: assetPath('/images/apple.png'),
       title: 'Apple',
       className: SIZE
     },
     {
-      img: '/images/nike.jpg',
+      img: assetPath('/images/nike.jpg'),
       title: 'Nike',
       className: SIZE
     },
     {
-      img: '/images/adidas.jpg',
+      img: assetPath('/images/adidas.jpg'),
       title: 'Adidas',
       className: SIZE
     },
     {
-      img: '/images/puma.jpg',
+      img: assetPath('/images/puma.jpg'),
       title: 'Puma',
       className: SIZE
     },
     {
-      img: '/images/redbull.jpg',
+      img: assetPath('/images/redbull.jpg'),
       title: 'RedBull',
       className: SIZE
     },
     {
-      img: '/images/pepsi.jpg',
+      img: assetPath('/images/pepsi.jpg'),
       title: 'Pepsi',
       className: SIZE
     },
     {
-      img: '/images/heineken.jpg',
+      img: assetPath('/images/heineken.jpg'),
       title: 'Heineken',
       className: SIZE
     },
     {
-      img: '/images/Bundesliga.png',
+      img: assetPath('/images/Bundesliga.png'),
       title: 'Bundesliga',
       className: SIZE
     },
     {
-      img: '/images/MILO.jpg',
+      img: assetPath('/images/MILO.jpg'),
       title: 'Milo',
       className: SIZE
     },
     {
-      img: '/images/chevrolet.jpg',
+      img: assetPath('/images/chevrolet.jpg'),
       title: 'Chevrolet',
       className: SIZE
     },
     {
-      img: '/images/Coca-Cola.png',
+      img: assetPath('/images/Coca-Cola.png'),
       title: 'CocaCola',
       className: SIZE
     },
     {
-      img: '/images/Tiger.png',
+      img: assetPath('/images/Tiger.png'),
       title: 'Tiger',
       className: SIZE
     },
     {
-      img: '/images/Castrol.png',
+      img: assetPath('/images/Castrol.png'),
       title: 'Castrol',
       className: SIZE
     },
     {
-      img: '/images/Chivas.png',
+      img: assetPath('/images/Chivas.png'),
       title: 'Chivas',
       className: SIZE
     },

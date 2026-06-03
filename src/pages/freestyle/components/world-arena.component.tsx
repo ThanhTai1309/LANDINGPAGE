@@ -1,4 +1,5 @@
 import MotionInView from "@/components/ui/motion-in-view";
+import { assetPath } from "@/lib/asset";
 
 const WorldArenaComponent = () => {
   return (
@@ -22,7 +23,7 @@ const WorldArenaComponent = () => {
           <div className="flex flex-row gap-2 items-center justify-around md:justify-between">
             <MotionInView direction="up">
               <MotionInView as="img" direction="none"
-                src="/images/Deco.png"
+                src={assetPath("/images/Deco.png")}
                 alt=""
                 className="w-[100%] h-[100%] object-cover"
               />
@@ -30,7 +31,7 @@ const WorldArenaComponent = () => {
 
             <MotionInView direction="up" delay={0.05}>
               <MotionInView as="img" direction="none"
-                src="/images/width_640.webp"
+                src={assetPath("/images/width_640.webp")}
                 alt=""
                 className="w-[100%] h-[100%] object-cover"
               />
@@ -38,13 +39,13 @@ const WorldArenaComponent = () => {
 
             <div className="flex flex-col justify-center gap-4">
               <MotionInView as="img" direction="none"
-                src="/images/Owen.png"
+                src={assetPath("/images/Owen.png")}
                 alt=""
                 className="w-full object-cover overflow-hidden"
               />
 
               <MotionInView as="img" direction="none"
-                src="/images/Ronaldinho.png"
+                src={assetPath("/images/Ronaldinho.png")}
                 alt=""
                 className="w-full object-cover overflow-hidden"
               />
@@ -55,7 +56,7 @@ const WorldArenaComponent = () => {
         <div className="w-full h-full flex flex-col items-center justify-center mt-10 lg:mt-0 gap-8">
           <div className="w-full h-full flex flex-col items-center justify-center overflow-hidden">
             <MotionInView as="img" direction="right"
-              src="/images/Ronaldinho1.png"
+              src={assetPath("/images/Ronaldinho1.png")}
               className="w-full object-cover bg-black"
               alt="Freestyle Image"
             />

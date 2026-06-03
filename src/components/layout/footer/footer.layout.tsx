@@ -1,6 +1,7 @@
 import { MAIL_TO } from "@/constants/directions/contact-direct.direction";
 import { listMenu } from "@/constants/menu/listMenu.menu";
 import listSocialMenu from "@/constants/menu/listSocial.menu";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -11,9 +12,9 @@ const Footer = () => {
                     <ul className="text-xl text-white flex flex-wrap justify-center gap-4 md:flex-col md:gap-0">
                         {listMenu.map((menu, index) => (
                             <li key={index} className="my-2">
-                                <a className="hover:text-indigo-600" href={menu.href}>
+                                <Link className="hover:text-indigo-600" to={menu.href}>
                                     {menu.title}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

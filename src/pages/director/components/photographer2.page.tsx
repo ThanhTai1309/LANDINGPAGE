@@ -1,4 +1,5 @@
 import MotionInView from "@/components/ui/motion-in-view";
+import { assetPath } from "@/lib/asset";
 
 const Photographer2 = () => {
 
@@ -9,21 +10,21 @@ const Photographer2 = () => {
         <div className="w-full lg:w-3/5 flex flex-col">
           <MotionInView direction="up" className="flex gap-4 md:gap-6 items-stretch">
             <MotionInView as="img" direction="none"
-              src="/images/Pho1.jpg"
+              src={assetPath("/images/Pho1.jpg")}
               alt=""
               className="w-1/3 h-[60vh] md:h-[70vh] object-cover"
             />
             <MotionInView as="img" direction="none" delay={0.05}
-              src="/images/Pho2.jpg"
+              src={assetPath("/images/Pho2.jpg")}
               alt=""
               className="w-2/3 h-[60vh] md:h-[70vh] object-cover"
             />
           </MotionInView>
 
           <div className="grid grid-cols-3 gap-4 md:gap-6 mt-6">
-            <MotionInView as="img" direction="up" src="/images/Pho3.jpg" alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
-            <MotionInView as="img" direction="up" delay={0.05} src="/images/Pho4.jpg" alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
-            <MotionInView as="img" direction="up" delay={0.1} src="/images/Pho5.jpg" alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
+            <MotionInView as="img" direction="up" src={assetPath("/images/Pho3.jpg")} alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
+            <MotionInView as="img" direction="up" delay={0.05} src={assetPath("/images/Pho4.jpg")} alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
+            <MotionInView as="img" direction="up" delay={0.1} src={assetPath("/images/Pho5.jpg")} alt="" className="w-full h-44 md:h-52 lg:h-56 object-cover" />
           </div>
         </div>
 
@@ -39,7 +40,7 @@ const Photographer2 = () => {
 
           <MotionInView direction="up" className="mt-8 md:mt-10">
             <MotionInView as="img"
-              src="/images/Pho6.jpg"
+              src={assetPath("/images/Pho6.jpg")}
               alt=""
               className="w-full h-[40vh] md:h-[55vh] object-cover"
             />
