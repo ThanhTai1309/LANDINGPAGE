@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Footer from "./components/layout/footer/footer.layout";
 import Navbar from "./components/layout/navbar/navbar.layout";
 import AppRouter from "./routes";
@@ -6,11 +6,11 @@ import AppRouter from "./routes";
 function App() {
   return (
     <div className="bg-black w-full min-h-screen">
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <HashRouter>
         <Navbar />
         <AppRouter />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
